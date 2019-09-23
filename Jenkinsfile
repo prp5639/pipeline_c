@@ -19,11 +19,11 @@ stages {
 							echo -e "\n\nSTEP 3:	Initiating Build for below files (using make)........"
 								ls *.c | nl | sed 's/	/) /g' | tr '\n' ' '
 							echo -e "\n"    
-								cat makefile | make
+								make
 
 						#dt=$(date +%Y-%m-%d_%H:%M:%S)
 
-						if [[ -x './ABC.exe' ]]; then  
+						if [[ -x "./ABC.exe" ]]; then  
 							echo -e "\nSTEP 4:	Build Successful"
 							echo "       	BUILD_FILE: $(pwd)/ABC.exe"	
 						else
