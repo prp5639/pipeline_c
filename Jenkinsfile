@@ -11,7 +11,7 @@ stages {
 						if [[ -x "ABC.exe" ]]; then
 							echo "STEP 1:	Cleaning existing builds ........"
 								ls *.exe | nl | sed 's/	/) /g' | tr '\n' ' ' 
-									rm -f "./ABC.exe" 
+									rm -f "ABC.exe" 
 							echo -e "\n\nSTEP 2:	Cleaning existing Object files........"
 								ls *.o | nl | sed 's/	/) /g' | tr '\n' ' '
 									rm -f *.o
@@ -23,7 +23,7 @@ stages {
 
 						#dt=$(date +%Y-%m-%d_%H:%M:%S)
 
-						if [[ -x 'sh ABC.exe' ]]; then  
+						if [[ -x './ABC.exe' ]]; then  
 							echo -e "\nSTEP 4:	Build Successful"
 							echo "       	BUILD_FILE: $(pwd)/ABC.exe"	
 						else
