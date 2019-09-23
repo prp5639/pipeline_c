@@ -19,7 +19,7 @@ stages {
 							echo -e "\n\nSTEP 3:	Initiating Build for below files (using make)........"
 								ls *.c | nl | sed 's/	/) /g' | tr '\n' ' '
 							echo -e "\n"    
-								make
+								make ABC.exe
 
 						#dt=$(date +%Y-%m-%d_%H:%M:%S)
 
