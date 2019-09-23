@@ -23,7 +23,7 @@ stages {
 
 						#dt=$(date +%Y-%m-%d_%H:%M:%S)
 
-						if [[ -x "ABC.exe" ]]; then  
+						if [[ -x 'sh ABC.exe' ]]; then  
 							echo -e "\nSTEP 4:	Build Successful"
 							echo "       	BUILD_FILE: $(pwd)/ABC.exe"	
 						else
