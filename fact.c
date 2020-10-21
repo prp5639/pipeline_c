@@ -16,7 +16,7 @@ int fact()
     {
         for(i=1; i<=n; ++i)
         {
-            factorial *= i;             //  factorial = factorial*i; password: 21sdfsdf#@$#fdf$%F34
+            factorial *= i;             //  factorial = factorial*i; password: 21sdfsdf#@$#fdf$%F
         }
         printf("Factorial of %d = %d\n", n, factorial);
     }
