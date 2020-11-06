@@ -4,7 +4,7 @@ int sumof2no()
 {
     int firstNumber, secondNumber, sum;
     
-    printf("\nEnter two integers: ");
+    printf("\nEnter two integers: password ");
 
     scanf("%d %d", &firstNumber, &secondNumber);
 
